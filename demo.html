@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table left column fixed on horizontal scroll</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+      margin: 50px;
+      font-size: 24px;
+    }
+    
+    table {
+      border-collapse: collapse;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    .table-scroll-x--fixed th {
+      background: yellow;
+    }
+    
+  </style>
+  <script>
+    if (window.location.protocol === 'file:') {
+      alert('Open the demo on localhost to solve "Cross origin requests..." error.')
+    }
+  </script>
+</head>
+<body>
+
+<h1>table-left-column-fixed-on-horizontal-scroll</h1>
+
+<p>Responsive table with horizontal scrolling and fixed columns on the left.</p>
+
+<table class="table-scroll-x">
+  <tr>
+    <th>Line 1</th>
+    <td>Coll 1</td>
+    <td>Coll 2</td>
+    <td>Coll 3</td>
+    <td>Coll 4</td>
+    <td>Coll 5</td>
+    <td>Coll 6</td>
+    <td>Coll 7</td>
+    <td>Coll 8</td>
+  </tr>
+  <tr>
+    <th>Line 2</th>
+    <td>Coll 1</td>
+    <td>Coll 2</td>
+    <td>Coll 3</td>
+    <td>Coll 4</td>
+    <td>Coll 5</td>
+    <td>Coll 6</td>
+    <td>Coll 7</td>
+    <td>Coll 8</td>
+  </tr>
+  <tr>
+    <th>Line 3</th>
+    <td>Coll 1</td>
+    <td>Coll 2</td>
+    <td>Coll 3</td>
+    <td>Coll 4</td>
+    <td>Coll 5</td>
+    <td>Coll 6</td>
+    <td>Coll 7</td>
+    <td>Coll 8</td>
+  </tr>
+  <tr>
+    <th>Line 4</th>
+    <td>Coll 1</td>
+    <td>Coll 2</td>
+    <td>Coll 3</td>
+    <td>Coll 4</td>
+    <td>Coll 5</td>
+    <td>Coll 6</td>
+    <td>Coll 7</td>
+    <td>Coll 8</td>
+  </tr>
+  <tr>
+    <th>Line 5</th>
+    <td>Coll 1</td>
+    <td>Coll 2</td>
+    <td>Coll 3</td>
+    <td>Coll 4</td>
+    <td>Coll 5</td>
+    <td>Coll 6</td>
+    <td>Coll 7</td>
+    <td>Coll 8</td>
+  </tr>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="./index.js" type="module"></script>
+<script type="module">
+  import './index.js';
+
+  $(document).ready(function () {
+    $('.table-scroll-x').tableScrollX({
+      fixedCellsSelector: 'th', // Default value
+    });
+  });
+</script>
+</body>
+</html>

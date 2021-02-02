@@ -1,0 +1,41 @@
+
+
+.table-scroll-x th {
+  opacity: 0;
+}
+
+
+.table-scroll-x--wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-scroll-x--wrapper2 {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+.table-scroll-x--wrapper td,
+.table-scroll-x--wrapper th {
+  white-space: nowrap;
+}
+
+
+.table-scroll-x--fixed {
+  position: absolute;
+  pointer-events: none;
+
+}
+
+.table-scroll-x--fixed th {
+  opacity: 1;
+  background: white;
+}
+
+.table-scroll-x--fixed td {  
+  opacity: 0;
+  border-color: transparent;
+}
+
+

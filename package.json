@@ -1,0 +1,16 @@
+{
+  "name": "table-left-column-fixed-on-horizontal-scroll",
+  "version": "1.0.0",
+  "description": "Responsive table with horizontal scrolling and fixed columns on the left",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mavlutovr/table-left-column-fixed-on-horizontal-scroll.git"
+  },
+  "homepage": "https://github.com/mavlutovr/table-left-column-fixed-on-horizontal-scroll",
+  "keywords": [
+    "adaptive responsive table fixed cell front-end jquery javascript"
+  ],
+  "author": "mavlutovr",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
