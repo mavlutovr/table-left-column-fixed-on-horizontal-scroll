@@ -40,7 +40,7 @@ import 'table-left-column-fixed-on-horizontal-scroll/index.css';
 
 ```javascript
 $(document).ready(function () {
-    $('.table-scroll-x').tableScrollX({
+    $('table.table-scroll-x').tableScrollX({
         fixedCellsSelector: 'th', // Default value
     });
 });
